@@ -1,0 +1,44 @@
+Topic:String
+n="hi i'am "sam""
+SyntaxError: invalid syntax
+n='hi i'am'
+SyntaxError: unterminated string literal (detected at line 1)
+m="hi i'am"
+m
+"hi i'am"
+m="hi i'am'/"sam"
+SyntaxError: unterminated string literal (detected at line 1)
+m="hi i'am'\"sam"
+m
+'hi i\'am\'"sam'
+
+
+Mutable & Immutable
+mutable:list                  immutable:int
+ set                          float
+dictionary                    string      
+                              bool
+                              tuple
+
+
+x=20
+x
+20
+id(x)
+140711126689160
+x=35
+x
+35
+id(x)
+140711126689640
+l=[1,7,4]
+l
+[1, 7, 4]
+id(l)
+2444748297664
+l.append(8)
+l
+[1, 7, 4, 8]
+id(l)
+2444748297664
+
