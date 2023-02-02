@@ -1,0 +1,167 @@
+d={n:n*n for n in range(1,5)}
+print(d)
+
+
+
+old={'rice':50,'dal':70,'flour':100}
+new={product:price*5 for (product,price)in old.items()}
+print(new)
+
+
+real={'shalini':20,'tom':45,'lucy':18}
+now={name:age for(name,age) in real.items() if age>18}
+print(now)
+
+
+
+import random
+l=["vikram","chandra","santhi","lakshmi","kushi","mohan","shyamala","samanvi"]
+l_dict={names:random.randint(1,100) for names in l}
+print(l_dict)
+
+
+
+
+import random
+student_name=list(map(str,input("enter names: ").split()))
+marks=[]
+for i in range (len(student_name)):
+    a=(random.randint(300,500) /500)*100
+    marks.append(a)
+d={student:percentage for(student,percentage) in zip(student_name,marks)}
+print(d)
+
+
+another method
+import random
+student_name=list(map(str,input("enter names: ").split()))
+marks=[]
+for i in range (len(student_name)):
+    a=(random.randint(300,500) )
+    print(a)
+    b=(a/500)*100
+    marks.append(b)
+d={student:percentage for(student,percentage) in zip(student_name,marks)}
+print(d)
+
+
+String:
+s=("lahari")
+s
+'lahari'
+s.upper()
+'LAHARI'
+s.lower()
+'lahari'
+s.capitalize()
+'Lahari'
+s.replace('a','i')
+'lihiri'
+s.strip()
+'lahari'
+s=("lahari ram")
+s.strip()
+'lahari ram'
+s=("   lahari ram    ")
+s.strip()
+'lahari ram'
+s.split(',')
+['   lahari ram    ']
+s.center(31,'*')
+'*******   lahari ram    *******'
+s.split('s')
+['   lahari ram    ']
+s.split('a')
+['   l', 'h', 'ri r', 'm    ']
+
+s=" hari "
+s
+' hari '
+s.islower()
+True
+s.istitle()
+False
+s.startswith('hi',0,len(s))
+False
+s.rfind()
+s.rfind('a',0,len(s))
+2
+
+
+x=20
+x
+20
+id(x)
+140711126689160
+x=35
+x
+35
+id(x)
+140711126689640
+l=[1,7,4]
+l
+[1, 7, 4]
+id(l)
+2444748297664
+l.append(8)
+l
+[1, 7, 4, 8]
+id(l)
+2444748297664
+
+
+
+s1=input("enter your string: ")
+s2=input("enter character: ")
+if s2  in s1:
+    print("true")
+else:
+    print("false")
+
+st=input("enter string:")
+char=input("enter char:")
+a="yes" if char in st else no
+print(a)
+
+
+s=input("enter your string:")
+if (s==s[::-1]):
+    print("it's a palindrome")
+else:
+    print("no it's not a palindrome")
+
+
+s=input("enter a string:")
+count=0
+for i in s:
+          if i==" ":
+             count+=1
+            
+print(count)
+
+
+l=["a","e","i","o","u","A","E","I","O","U"]
+s=input("enter string:")
+count=0
+for i in l:
+  if i in s:
+      count+=1
+print(count)
+
+
+math module
+import math
+print("ceil 12.5:",math.ceil(12.5))
+print("floor 12.5:",math.floor(12.5))
+print("sqrt 345:",math.sqrt(345))
+print("factorial 3:",math.factorial(3))
+print("power 2,5:",math.pow(2,5))
+print("remainder 10,3:",math.fmod(10,3))
+
+a,b=divmod(10,3)
+print(a,b)
+
+
+
+
+
