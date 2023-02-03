@@ -1,0 +1,237 @@
+import random as r
+x="i love chocolates"
+
+print(r.sample(x,2))
+
+a=[1,2,3,4,5]
+r.shuffle(a)
+print (a)
+
+a=[1,2,3,4,5,6]
+print(r.choice(a))
+
+b="welcome back"
+print(r.choice(b))
+
+a=r.random()
+print(a)
+
+print(r.randint(20,30))
+
+a=[10,20,30,40,50]
+print(r.choices(a,k=8))
+
+s="hello good morning"
+print(r.choices(s,k=3))
+
+print(r.uniform(5,10))
+
+z=dir(r)
+print(z)
+
+output:['e', 'i']
+[3, 5, 2, 4, 1]
+5
+a
+0.6550062491806882
+27
+[30, 20, 10, 50, 40, 30, 50, 10]
+['o', 'o', 'o']
+6.3849809174999805
+['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_ONE', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_accumulate', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_floor', '_index', '_inst', '_isfinite', '_log', '_os', '_pi', '_random', '_repeat', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randbytes', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
+
+
+#display whole year calendar
+
+import calendar
+print("full calendar")
+print(calendar.calendar(2022))
+
+print("particular month")
+print(calendar.month(2022,4))
+
+print("set first day of the week")
+calendar.setfirstweekday(calendar.SUNDAY)
+print(calender.month(2022,12))
+
+#date month
+
+import datetime
+a=datetime.datetime.now()
+print(a)
+
+sv=a.strftime("%y")
+fv=a.strftime("%Y")
+
+print("year short version",sv)
+print("year longer version",fv)
+
+
+TOPIC:Functions
+def sample():
+    print("today")
+    print("great day")
+sample()
+print("happy time")
+sample()
+
+#without using arguments
+def multi():
+    x=int(input("enter number:"))
+    y=int(input("enter number:"))
+    z=int(input("enter number:"))
+    prod=x*y*z
+    print(prod)
+multi()          
+
+#using arguments another method
+def multi():
+    x=int(input("enter number:"))
+    y=int(input("enter number:"))
+    z=int(input("enter number:"))
+    prod=x*y*z
+    return prod
+res=multi()
+print(res)
+
+#user input
+def multi(a,b,c):
+    prod=a*b*c
+    print(prod)
+n1=int(input("enter number:"))
+n2=int(input("enter number:"))
+n3=int(input("enter number:"))
+    
+multi(n1,n2,n3)
+
+
+
+#with argument without return
+def multi(n1,n2,n3):
+    prod=n1*n2*n3
+    print(prod)
+    
+multi(3,4,5)
+
+
+#with argument, with return value static input
+def multi(n1,n2,n3):
+    prod=n1*n2*n3
+    return(prod)
+    
+res=multi(3,4,5)
+print(res)
+
+#user input
+def multi(a,b,c):
+    prod=a*b*c
+    return(prod)
+n1=int(input("enter number:"))
+n2=int(input("enter number:"))
+n3=int(input("enter number:"))
+    
+res=multi(n1,n2,n3)
+print(res)
+
+
+
+#with argument, with return value static input
+def multi(n1,n2,n3):
+    prod=n1*n2*n3
+    return(prod)
+    
+res=multi(3,4,5)
+print(res)
+
+#user input
+def multi(a,b,c):
+    prod=a*b*c
+    return(prod)
+n1=int(input("enter number:"))
+n2=int(input("enter number:"))
+n3=int(input("enter number:"))
+    
+res=multi(n1,n2,n3)
+print(res)
+
+
+
+def lemon():
+    l=int(input("enter lemons in your hand:"))
+    print(l)
+    lemons=21-l
+    if l==21:
+        print("you have sufficient")
+    elif l>21:
+        print("more then required",l-21)
+    else:
+        print("u need",lemons)
+lemon()     
+
+
+#factors using type2
+def factors(n):
+    
+    count=0
+    for i in range(1,n+1):
+        if n%i==0:
+          count+=1
+          print(i)
+n=int(input("enter number:"))
+          
+factors(n)            
+        
+def multi_table(n):
+    for i in range(1,12):
+        print(i,"X",n,"=",i*n)
+
+n=int(input("which table:"))
+multi_table(n)         
+        
+
+def digits(n):
+    sum=0
+    while n!=0:
+        rem=n%10
+        sum=sum+rem
+        n=n//10
+    return sum
+n=int(input("enter the number"))
+res=digits(n)
+print(res)
+
+
+def display():
+    n=int(input("enter number:"))
+    if n==1:
+        display()
+    else:
+        print("over")
+display()
+
+
+def fact(n):
+    if n==0:
+        return 1
+    return n* fact(n-1)
+result=fact(5)
+print(result)
+
+
+def add_sub(x,y):
+       sub=x-y
+       add=x+y
+       return sub,add
+
+res1,res2=add_sub(20,10)
+print(res1)
+print(res2)
+
+
+#variable length method
+def sum(*a):
+    c=0
+   for i in a:
+     c=c+i
+     print(c)
+sum(10,2,4,9)
